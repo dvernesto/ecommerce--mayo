@@ -1,2 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+    --principal-color:  #caebf2;
+    --danger-color: #ff3b3f;
+    --lightcard-color: #a9a9a9;
+    --darktext-color: #222222;
+    --shadowtext-color: #7c8071;
+    --blurred-color: #efefef;
+    --ok-color:#66b9bf;
+    --button-color: #6d7993;
+/*color1 { #b2d9f7 };
+color2 { #487aa1 };
+color3 { #3d3c3b };
+color4 { #7c8071 };
+color5 { #dde3ca };*/
+    
+
+}
+
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--principal-color);
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--darktext-color);
+}
+
+p{
+    color: var(--shadowtext-color);
+    font-size: 1.25rem;
+}
+
+div{
+    padding: 1rem;
+}
+
+img{
+    width: 15vh;
+    height: 15vh;
+}
+
+h1{ font-size: 3.5rem;}
+h2{ font-size: 2.7rem;}
+h3{ font-size: 2rem;}
+
+
+button{
+    font-size: .7rem;
+    font-weight: bold;
+    padding: 10px 15px ;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(25, 100, 140);
+    background-color: rgb(190, 230, 240);
+}
+
+button:hover{
+    background-color: rgba(100, 216, 245, 0.377);
+    transition-duration: 0.4s;
+}
+
+.mb2{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    gap: 1rem;
+
+    justify-content: space-between;
+    max-width: 100%;
+    overflow-x: scroll;
+    margin: 10px 2rem;
+}
+
+.card{
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.5rem 1rem;
+    border: 2px solid;
+    border-color: var(--accentbutton-color);
+    border-radius: 1rem;
+    background-color: var(--blurred-color);
+    text-align: left;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+flex-wrap: wrap;
+}
+
+.btn-danger{
+    background-color: var(--danger-color);
+    color: var(--blurred-color);
+
+}
+
+.btn-info{
+    background-color: var(--ok-color);
+    color: var(--blurred-color);
+
+}
+
+.btn-danger:hover{
+    background-color:var(--lightcard-color);
+    transition-duration: 0.4s;
+}
+
+table{
+    background-color: var(--blurred-color);
+    padding: 1rem 3rem;
+}
+
+.container{
+    background-color: var();
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 2.5em;
+}
+
+header a:hover{
+    color: rgba(54, 114, 129, 0.377);
+}
+.header-section{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: var(--lightcard-color);
+    position: relative;
+    
+}
+
+section{
+    padding: 1rem 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    
+}
+.menu{
+    width: 45px;
+    height: 45px;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa ~ ul{
+    background-color: var(--principal-color);
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: calc( 100vh - 60px );
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    display: none;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    display: flex;
 }

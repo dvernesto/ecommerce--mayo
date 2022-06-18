@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    
-    <div class="container">
-        <h4>Carrito de compras</h4>
+
+    <header>
+        <div class="section-header">
+            
+            <header>
+                <nav>
+                    <p class="logo">HazloSucu!</p>
+                    <input type="checkbox" id="menu-hamburguesa">
+                    <label for="menu-hamburguesa">
+                        <img class="menu" src="./assets/images/carrito-de-compras.png" alt="">
+                    </label>
+            
+                    <ul>
+                        <h4>Carrito de compras</h4>
         <table class="table">
           <thead>
             <tr>
@@ -28,7 +39,37 @@
             </tr>
           </tfoot>
         </table>
-        <h4>Cards</h4>
+                    </ul> 
+        
+                </nav>
+            </header>
+        </div>
+    </header>
+    <section id="intro">
+        <h1 >Siempre una opcion,<br>siempre viva<br> <span class="logo">HazloSucu!</span></h1>
+        <button>Conoce más</button>
+    </section>
+    
+    <div class="container">
+        <!--<h4>Carrito de compras</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+            </tr>
+          </tfoot>
+        </table> -->
+        <h4>Productos</h4>
         <div class="row" id="cards"></div>
       </div>
   

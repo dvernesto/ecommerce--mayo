@@ -5,6 +5,7 @@ const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
+const themeIcon = document.getElementById("theme-toggler")
 let carrito = {}
 
 // Eventos
@@ -144,3 +145,14 @@ const btnAumentarDisminuir = e => {
     }
     e.stopPropagation()
 }
+
+//
+themeIcon.addEventListener("click",(e) =>{
+    body.classList.toggle("dark-theme")
+    let isDark=body.classList.contains("dark-theme")
+    if(isDark){
+        themeIcon.classList.replace("bx-moon","bx-sun")
+    }else{
+        themeIcon.classList.replace("bx-sun","bx-moon")
+    }
+})
